@@ -1,0 +1,138 @@
+#erro{
+
+    color: rgb(163, 0, 0);
+
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, button, input {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #caffbf;
+}
+
+/* Conteúdo principal */
+h1 {
+    margin: 30px 0 20px;
+    color: rgb(247, 165, 59);
+    text-align: center;
+}
+
+#imagem img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Informações do perfil */
+#nome,
+#sobrenome,
+#tipo,
+#cidade,
+#cargo,
+#salario,
+#link {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+#cargo{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+#link a {
+    color: #333;
+    text-decoration: none;
+}
+
+#link a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: rgb(231, 175, 102);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgb(247, 165, 59);
+}
+input{
+    padding: 10px 15px;
+    border: 2px solid rgb(247, 165, 59);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 220px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: rgb(255, 145, 0);
+    box-shadow: 0 0 5px rgba(255, 145, 0, 0.726);
+}
+/* Responsividade básica */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
